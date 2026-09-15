@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name | GitHub Pages</title>
+    <style>
+        /* GitHub-inspired Clean Dark Palette */
+        :root {
+            --bg-default: #0d1117;
+            --bg-subtle: #161b22;
+            --border-default: #30363d;
+            --text-primary: #e6edf3;
+            --text-secondary: #9198a1;
+            --accent-blue: #2f81f7;
+            --accent-green: #238636;
+            --accent-green-hover: #2ea043;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-default);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: var(--bg-subtle);
+            border-bottom: 1px solid var(--border-default);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .brand svg {
+            fill: var(--text-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-default);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-green);
+            color: #ffffff;
+            border: 1px solid rgba(240, 246, 252, 0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-green-hover);
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-subtle);
+            color: var(--text-primary);
+            border: 1px solid var(--border-default);
+        }
+
+        .btn-secondary:hover {
+            background-color: #21262d;
+            border-color: #8b949e;
+        }
+
+        /* Main Content Grid */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-default);
+            border-radius: 6px;
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-default);
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="#" class="brand">
+            <!-- GitHub Octocat SVG Icon -->
+            <svg height="24" viewBox="0 0 16 16" width="24" aria-hidden="true">
+                <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82A7.44 7.44 0 0 0 8 4.75c-.68.01-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+            </svg>
+            <span>GitHub Pages Site</span>
+        </a>
+    </header>
+
+    <!-- Hero Showcase Section -->
+    <section class="hero">
+        <h1>Welcome to Your Project</h1>
+        <p>A minimalist template designed to integrate beautifully with the GitHub ecosystem. Perfect for documentation, portfolios, or landing pages.</p>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-secondary">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Detailed Features Grid -->
+    <main class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>⚡ Fast Deployment</h3>
+                <p>Built directly with static HTML and CSS. Simply push to your branch, and GitHub handles the rest.</p>
+            </div>
+            <div class="card">
+                <h3>🎨 Native Look & Feel</h3>
+                <p>Styled with matching system font stacks and color palettes inspired by the official Primer design system.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Fully Responsive</h3>
+                <p>Designed using flexible flexbox and grid components that adapt seamlessly from desktop screens down to smartphones.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+
+</body>
+</html>
