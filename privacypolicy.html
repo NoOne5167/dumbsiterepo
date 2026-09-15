@@ -2,53 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Privacy Policy - [Your Website Name]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - rclone</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; max-width: 800px; margin: auto; padding: 20px;}
-        h1, h2 { color: #2c3e50; }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f9f9f9; }
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { border-bottom: 2px solid #eaedf1; padding-bottom: 15px; margin-top: 0; }
+        h2 { border-bottom: 1px solid #eaedf1; padding-bottom: 8px; margin-top: 30px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight-box { background-color: #f0f7ff; border-left: 4px solid #007bff; padding: 15px; margin: 20px 0; border-radius: 0 4px 4px 0; }
     </style>
 </head>
 <body>
 
+<div class="container">
     <h1>Privacy Policy</h1>
-    <p>Last updated: [Date]</p>
+    <p><strong>Last updated:</strong> [Date]</p>
 
-    <p>[Your Website Name/Company Name] ("us", "we", or "our") operates [Your Website URL] (the "Site"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Site.</p>
+    <p>[Your Company Name/Developer Name] ("us", "we", or "our") operates <strong>rclone</strong> (the "Application"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Application and the choices you have associated with that data.</p>
 
-    <h2>Information Collection and Use</h2>
+    <h2>1. Information We Collect</h2>
     <p>We collect several different types of information for various purposes to provide and improve our service to you.</p>
-    
-    <h3>Types of Data Collected</h3>
     <ul>
-        <li><strong>Personal Data:</strong> While using our Site, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). This may include, but is not limited to: Email address, First name and last name, Phone number, Address.</li>
-        <li><strong>Usage Data:</strong> We may also collect information how the service is accessed and used ("Usage Data").</li>
+        <li><strong>Personal Data:</strong> While using our Application, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you, such as your email address, first and last name, or profile picture.</li>
+        <li><strong>Usage Data:</strong> We may collect information on how the Application is accessed and used, including your IP address, browser type, device information, and time spent on our pages.</li>
     </ul>
 
-    <h2>Use of Data</h2>
-    <p>[Your Company Name] uses the collected data for various purposes:</p>
+    <!-- CRITICAL GOOGLE OAUTH SECTION START -->
+    <div class="highlight-box">
+        <h2>2. Google API User Data & Scopes</h2>
+        <p>Our Application utilizes Google OAuth API Services to access your Google account data in order to provide core features. Specifically, we request access to the following scopes:</p>
+        <ul>
+            <li><code>[Insert Scope 1, e.g., https://googleapis.com]</code>: Used to authenticate your identity and link your account.</li>
+            <li><code>[Insert Scope 2, e.g., https://googleapis.com]</code>: Used to display your upcoming events directly inside our dashboard interface.</li>
+        </ul>
+        
+        <h3>How We Use Google Data</h3>
+        <p>We only use the data obtained through Google OAuth to power the specific user-facing features of rclone (e.g., [Briefly explain functionality, like: sync your calendar / draft your emails]). We do not use this data for any other purpose.</p>
+
+        <h3>Sharing, Transfer, and Disclosure of Google User Data</h3>
+        <p><strong>rclone does not sell, rent, share, transfer, or disclose your Google user data to any third parties</strong>. We only transmit this data directly to our secure servers to process your requests, or when explicitly required by law. No human eyes at our company will read your Google data unless we have your explicit permission for troubleshooting, or if it is necessary for security purposes.</p>
+
+        <h3>Google API Services Limited Use Disclosure</h3>
+        <p>rclone's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://google.com" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </div>
+    <!-- CRITICAL GOOGLE OAUTH SECTION END -->
+
+    <h2>3. Data Retention and Deletion</h2>
+    <p>We retain your personal data only for as long as is necessary for the purposes set out in this Privacy Policy.</p>
+    <p><strong>How to request data deletion:</strong> You can revoke our Application's access to your Google account at any time via your Google Security Settings page. To completely delete your data from our database, please submit a deletion request via email to <code>[Your Support Email]</code>, and we will purge your records within [e.g., 30 days].</p>
+
+    <h2>4. Security of Data</h2>
+    <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. We implement industry-standard administrative and technical security safeguards to protect your personal information.</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
     <ul>
-        <li>To provide and maintain the Site</li>
-        <li>To notify you about changes to our service</li>
-        <li>To provide customer support</li>
-        <li>To gather analysis or valuable information so that we can improve the Site</li>
+        <li>By email: <code>[Your Support Email]</code></li>
+        <li>By visiting our support website: <a href="[Your App Homepage URL]">[Your App Homepage URL]</a></li>
     </ul>
-
-    <h2>Cookies</h2>
-    <p>We use cookies and similar tracking technologies to track the activity on our Site and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
-
-    <h2>Security</h2>
-    <p>The security of your personal data is important to us, but remember that no method of transmission over the Internet or electronic storage is 100% secure.</p>
-
-    <h2>Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us:</p>
-    <ul>
-        <li>By email: [Your Email Address]</li>
-        <li>By visiting this page on our website: [Your Contact Page URL]</li>
-    </ul>
+</div>
 
 </body>
 </html>
